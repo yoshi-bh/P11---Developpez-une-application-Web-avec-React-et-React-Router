@@ -1,23 +1,18 @@
-import '../../styles/App.css';
+import Image from "../../assets/sea-cliffs.jpg";
+import Banner from "../../components/Banner/";
+import "../../styles/App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Banner
+				img={Image}
+				alt="Image of cliffs by the sea"
+				text="Chez vous, partout et ailleurs"
+			/>
+      <h1>Page d'Acceuil</h1>
+		</div>
+	);
 }
 
 export default App;

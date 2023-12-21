@@ -1,0 +1,52 @@
+@import "./variables";
+
+.dropdown-button {
+  box-sizing: border-box;
+	margin: auto;
+	display: flex;
+  justify-content: space-between;
+	width: 63.9375rem;
+	padding: 0.625rem 1.25rem 0.625rem 0.9375rem;
+	align-items: center;
+	border-radius: 0.31rem;
+
+	background-color: $main-color;
+	color: white;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+
+  p {
+    padding-top: 0.1rem;
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opened {
+    rotate: 180deg;
+  }
+}
+
+.dropdown {
+  position: relative;
+  z-index: -1;
+  box-sizing: border-box;
+	margin: auto;
+	display: flex;
+	width: 63.9375rem;
+  margin-top: -0.35rem;
+  padding: 0.975rem 1.25rem 0.625rem 1.25rem;
+	// padding: 0rem 0rem 1rem 1.25rem;
+	align-items: center;
+	border-radius: 0 0 0.31rem 0.31rem;
+
+	background-color: $light-color;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 400;
+}
