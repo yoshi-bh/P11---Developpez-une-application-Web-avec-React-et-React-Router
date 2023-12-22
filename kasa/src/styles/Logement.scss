@@ -1,0 +1,80 @@
+@import "_variables.scss";
+
+.content {
+	display: flex;
+	justify-content: space-between;
+
+	.title {
+		margin: 1.87rem 0 0 0;
+		font-size: 2.25rem;
+		font-style: normal;
+		font-weight: 500;
+	}
+
+	.date {
+		margin: 0.25rem 0 1.75rem 0;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 500;
+	}
+
+	.tag-container {
+		display: flex;
+		margin: 0 0 1.5rem 0;
+
+		.tag {
+			min-width: 7.1875rem;
+			padding: 0.4rem 1.2rem;
+			margin: 0 0.8rem 0 0;
+			border-radius: 0.63rem;
+			background-color: $main-color;
+			color: white;
+			font-size: 0.875rem;
+			font-style: normal;
+			font-weight: 500;
+			text-align: center;
+		}
+	}
+
+	.right-side {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 1.31rem;
+
+		.host-container {
+			display: flex;
+			align-items: center;
+			margin-top: 1.5rem;
+
+			h2 {
+        width: 7rem;
+				margin: 0 0.62rem;
+        text-align: end;
+			}
+
+			img {
+				width: 4rem;
+				height: 4rem;
+				border-radius: 2rem;
+			}
+		}
+	}
+}
+
+.dropdown-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 3.13rem;
+
+	ul {
+    margin: 0;
+    padding: 0;
+		list-style: none;
+
+    li {
+      margin: 0.4rem 0;
+    }
+	}
+}

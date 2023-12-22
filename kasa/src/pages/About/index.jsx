@@ -5,7 +5,7 @@ import "../../styles/About.scss";
 
 function About() {
 	return (
-		<div>
+		<div className="about">
 			<Banner img={Image} alt="Image of mountains" text="" />
 			<div className="dropdown-container">
 				<Dropdown title="Fiabilité">
