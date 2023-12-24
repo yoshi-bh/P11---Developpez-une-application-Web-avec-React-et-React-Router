@@ -39,4 +39,10 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
+	@media (max-width: 768px) {
+		width: calc(100vw - 3rem);
+		height: 16rem;
+		margin: 0;
+	}
 }

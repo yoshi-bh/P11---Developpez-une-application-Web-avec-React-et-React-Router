@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import data from "../../data/logements.json";
 import Error from "../Error/";
-import Banner from "../../components/Banner";
+import Carousel from "../../components/Carousel";
 import Dropdown from "../../components/Dropdown";
 import "../../styles/Logement.scss";
 
@@ -9,17 +9,17 @@ function Logement() {
 	const { logementID } = useParams();
 	const elem = data.find((elem) => elem.id === logementID);
 
-	const menuWidth = "36vw";
+	const menuWidth = "100%";
 
 	if (!elem) {
 		return <Error />;
 	}
 
 	return (
-		<div>
-			<Banner img={elem.cover} alt="" text="" />
+		<div className="page">
+			<Carousel imgs={elem.pictures} />
 			<section className="content">
-				<div>
+				<div className="left-side">
 					<h1 className="title">{elem.title}</h1>
 					<h2 className="date">{elem.location}</h2>
 					<div className="tag-container">
@@ -65,7 +65,7 @@ function Logement() {
 					</svg>
 				</div>
 			</section>
-			<div className="dropdown-container">
+			<div className="dropdown-menu-container">
 				<Dropdown title="Description" menuWidth={menuWidth}>
 					{elem.description}
 				</Dropdown>

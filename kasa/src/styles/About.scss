@@ -1,6 +1,17 @@
-.about .dropdown-container {
-	display: flex;
-	flex-direction: column;
-	margin: 2.38rem 0;
-	gap: 1.88rem;
+.about {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 1.5rem;
+
+	.dropdown-menu-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 2.38rem 0;
+		gap: 1.88rem;
+
+		@media (max-width: 768px) {
+			gap: 1.25rem;
+		}
+	}
 }

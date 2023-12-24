@@ -25,4 +25,22 @@
 		font-style: normal;
 		font-weight: 500;
 	}
+
+	@media (max-width: 768px) {
+		padding: 5rem 0 7rem 0;
+		gap: 7rem;
+
+		h1 {
+			font-size: 6rem;
+		}
+
+		h2 {
+			width: 60vw;
+			font-size: 1.125rem;
+		}
+
+		a {
+			font-size: 0.875rem;
+		}
+	}
 }

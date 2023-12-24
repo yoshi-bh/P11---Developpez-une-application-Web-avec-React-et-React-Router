@@ -2,11 +2,10 @@ import { useState } from "react";
 import "../../styles/Dropdown.scss";
 
 function Dropdown({ title, children, menuWidth }) {
-	const [isOpened, setIsOpened] = useState(false);
+	let [isOpened, setIsOpened] = useState(false);
 
 	return (
-		<div >
-		{/* style={menuWidth ? { width: menuWidth, margin: 0 } : undefined} */}
+		<div className="dropdown-container">
 			<div
 				className="dropdown-button"
 				style={menuWidth ? { width: menuWidth, margin: 0 } : undefined}

@@ -7,7 +7,7 @@ function About() {
 	return (
 		<div className="about">
 			<Banner img={Image} alt="Image of mountains" text="" />
-			<div className="dropdown-container">
+			<div className="dropdown-menu-container">
 				<Dropdown title="Fiabilité">
 					<p>
 						Les annonces postées sur Kasa garantissent une fiabilité totale. Les
