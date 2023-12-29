@@ -1,6 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import data from "../../data/logements.json";
-import Error from "../Error/";
 import Carousel from "../../components/Carousel";
 import Dropdown from "../../components/Dropdown";
 import "../../styles/Logement.scss";
@@ -12,7 +11,7 @@ function Logement() {
 	const menuWidth = "100%";
 
 	if (!elem) {
-		return <Error />;
+		return <Navigate to="/404" />;
 	}
 
 	return (

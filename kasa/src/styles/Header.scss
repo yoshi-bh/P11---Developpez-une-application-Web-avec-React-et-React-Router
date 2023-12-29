@@ -1,12 +1,13 @@
 @import "_variables.scss";
 
 .header {
+	grid-area: header;
 	height: 4.25rem;
 	width: 77.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 2.8rem 0 3.2rem 0;
+	margin: 2.8rem auto 3.2rem auto;
 
 	svg {
 		width: auto;

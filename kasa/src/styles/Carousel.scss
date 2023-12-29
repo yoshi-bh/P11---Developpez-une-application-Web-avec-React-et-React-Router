@@ -5,7 +5,10 @@
 	border-radius: 1.56rem;
 	overflow: hidden;
 	text-align: center;
-	object-fit: cover;
+
+	img {
+		object-fit: cover;
+	}
 
 	h2 {
 		position: absolute;
